@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.perkins.oes.entity.Question">
+
+    <resultMap type="Question" id="questionMap">
+        <id column="id" property="id"/>
+        <result column="title" property="title"/>
+        <result column="answer_a" property="answerA"/>
+        <result column="answer_b" property="answerB"/>
+        <result column="answer_c" property="answerC"/>
+        <result column="answer_d" property="answerD"/>
+        <result column="right_answer" property="rightAnswer"/>
+        <result column="create_date" property="createDate"/>
+        <result column="update_date" property="updateDate"/>
+        <result column="status" property="status"/>
+        <result column="question_id" property="questionID"/>
+
+    </resultMap>
+
+    <select id="getQuestionAll" parameterType="map" resultMap="questionMap">
+        <![CDATA[
+            SELECT * FROM question 
+            WHERE status=1
+        ]]>
+            <if test="searchText !=null and searchText != ''"> 
+        <![CDATA[
+            AND question_id LIKE '%${searchText}%'
+            OR title LIKE '%${searchText}%'
+        ]]>
+            </if>
+        <![CDATA[
+            ORDER BY question_id ${sort} LIMIT ${offset} , ${pagesize}
+        ]]>
+    </select>
+    
+    <select id="getCount" parameterType="java.lang.String" resultType="int">
+      <![CDATA[
+        SELECT COUNT(id) AS questionCount FROM question
+        WHERE status=1
+      ]]>
+      <if test="_parameter !=null and _parameter != ''"> 
+      <![CDATA[
+        AND question_id LIKE '%${_parameter}%'
+        OR title LIKE '%${_parameter}%'
+      ]]>
+      </if>
+    </select>
+    
+    <select id="findById" parameterType="java.lang.Integer" resultMap="questionMap">
+    <![CDATA[
+        SELECT * FROM question WHERE id = #{_parameter}
+    ]]>
+    </select>
+    <select id="checkQuestionID" parameterType="String" resultMap="questionMap">
+        SELECT * FROM question ORDER BY id DESC LIMIT 0,1 ;
+    </select>
+    
+    <insert id="insert" parameterType="Question">
+    <![CDATA[
+        INSERT INTO question
+        (title, answer_a, answer_b, answer_c, answer_d, right_answer, create_date, update_date, status, question_id)
+        values
+        (#{title}, #{answerA}, #{answerB}, #{answerD}, #{answerC}, #{rightAnswer}, NOW(), NOW(), 1, #{questionID})
+    ]]>
+    </insert>
+    
+    <update id="delete" parameterType="Integer[]">
+        <![CDATA[
+        UPDATE question SET status=0 WHERE id in
+        ]]>
+         <foreach collection="array" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </update>
+    
+    <update id="update" parameterType="Question">
+    <![CDATA[
+        UPDATE question
+        SET title = #{title}, answer_a = #{answerA}, answer_b = #{answerB}, answer_c = #{answerC},
+        answer_d = #{answerD}, right_answer = #{rightAnswer}, update_date = NOW()
+        WHERE id=#{id}
+    ]]>
+    </update>
+    
+
+</mapper>

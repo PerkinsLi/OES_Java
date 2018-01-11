@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<controller>
+  <action name="showLogin" class="userController" method="showLogin" httpMethod="POST,GET">
+    <result name="input" view="/WEB-INF/jsp/login.jsp" />
+    
+  </action>
+  <action name="login" class="userController" method="login" httpMethod="POST">
+    <result name="error" view="/WEB-INF/jsp/login.jsp" />
+    <result name="success" view="./showListQuestion.action" redirect="true"
+     viewParameter="USER:session"/>
+  </action>
+  <action name="loginOut" class="userController" method="loginOut" >
+    <result name="success" view="/WEB-INF/jsp/login.jsp" />
+    <result name="error" view="./showListQuestion.action" redirect="true" />
+  </action>
+
+  <action name="toCreateQuestion" class="questionController" method="toSave" >
+    <result name="success" view="/WEB-INF/jsp/oes/contentadmin/create_question.jsp"
+    viewParameter="questionID:attribute" />
+    <result name="error" view="./showListQuestion.action" redirect="true" />
+  </action>
+  <action name="createQuestion" class="questionController" method="save" >
+    <result name="success" view="./showListQuestion.action" redirect="true" />
+    <result name="error" view="/WEB-INF/jsp/oes/contentadmin/create_question.jsp" />
+  </action>
+  <action name="deleteQuestion" class="questionController" method="delete" >
+    <result name="success" view="/WEB-INF/jsp/oes/contentadmin/main.jsp" />
+  </action>
+  <action name="toEditQuestion" class="questionController" method="toEdit" >
+    <result name="success" view="/WEB-INF/jsp/oes/contentadmin/edit_question.jsp"
+    viewParameter="question:attribute" />
+  </action>
+  <action name="editQuestion" class="questionController" method="edit" >
+    <result name="success" view="./showListQuestion.action" redirect="true"/>
+  </action>
+  <action name="questionInformation" class="questionController" method="questionInformation" >
+    <result name="success" view="/WEB-INF/jsp/oes/contentadmin/information.jsp"
+    viewParameter="question:attribute" />
+  </action>
+  <action name="showListQuestion" class="questionController" method="showList" >
+    <result name="success" view="/WEB-INF/jsp/oes/contentadmin/main.jsp"
+     viewParameter="questions:attribute, page:attribute, searchText:attribute"/>
+  </action>
+
+</controller>

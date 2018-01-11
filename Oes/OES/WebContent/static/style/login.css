@@ -1,0 +1,255 @@
+@CHARSET "UTF-8";
+
+body {
+    background-color: #FCFCFC;
+}
+
+#main {
+    overflow: hidden;
+    width: 1280px;
+    min-height: 760px;
+    margin: 0px auto;
+    background-color: #FFFFFF;
+}
+
+#content {
+    width: 1280px;
+    height: 650px;
+}
+#left {
+    float: left;
+    width: 360px;
+    height: 650px;
+    margin-left: 170px;
+}
+
+#right {
+    float: left;
+    width: 420px;
+    height: 650px;
+    margin-left: 160px;
+}
+#logo {
+    width: 180px;
+    height: 90px;
+    margin-top: 260px;
+    background-image: url("images/LOGO_Web_Login_90x180.png");
+}
+
+#oesName {
+    width: 360px;
+    height: 40px;
+    margin-top: 30px;
+    font-size: 30px;
+    font-family: Arial;
+    color: #2E4358;
+}
+
+#welcome {
+    margin-top: 60px;
+    font-size: 24px;
+    color: #2E4358;
+    font-family: Arial;
+}
+
+#form {
+    width: 400px;
+    height: 320px;
+    margin-top: 20px;
+    background-color: #2E4358;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#errorMessage {
+    width: 300px;
+    height: 20px;
+    margin-top: 30px;
+    margin-left: 50px;
+    background-color: #FCC898;
+    color: #FF0000;
+    font-family: Arial;
+    font-size: 12px;
+    border: 1px solid #FFFFFF;
+    text-align: center;
+    line-height: 20px;
+}
+
+#topMessage {
+    line-height: 20px;
+}
+.form_input {
+    position: relative;
+}
+
+.form_input li {
+    width: 30px;
+    height: 27px;
+    background-color: #FFFFFF;
+    border:0px;
+    border-radius:5px 0px 0px 5px;
+    display: block;
+    float: left;
+    margin-left: 5px;
+    
+}
+
+#iconUser {
+    background-image: url("images/ICN_Usename_20x20.png.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: 0px 0px;
+    width: 20px;
+    height: 20px;
+    z-index: 5;
+    top: 4px;
+    left: 20px;
+}
+
+#userName {
+    padding-left: 50px;
+}
+
+#iconLoginNameError {
+    background-image: url("images/ICN_Client_Login_Wrong_20X20.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: 0px 0px;
+    width: 20px;
+    height: 20px;
+    z-index: 5;
+    right: 20px;
+    top: 5px;
+    visibility: hidden;
+}
+#iconPassword {
+    background-image: url("images/ICN_Password_20x15.png.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: 0px 0px;
+    width: 20px;
+    height: 20px;
+    z-index: 5;
+    top: 4px;
+    left: 20px;
+    
+}
+
+#password {
+    padding-left: 50px;
+}
+
+#iconLoginPasswordError {
+    background-image: url("images/ICN_Client_Login_Wrong_20X20.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: 0px 0px;
+    width: 20px;
+    height: 20px;
+    z-index: 5;
+    right: 20px;
+    top: 5px;
+    visibility: hidden;
+}
+
+.form_input input {
+    width: 249px;
+    height: 30px;
+    border: 0px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    color: #9D9D9D;
+    font-size: 14px;
+    font-family: Arial;
+}
+
+#form #name {
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+#form #pw {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.button {
+    display: block;
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 300px;
+    height: 30px;
+    border: 0px;
+    background-color: #F19901;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: Arial;
+    cursor: pointer;
+    padding: 0px;
+}
+
+#button {
+    border: 0px;
+}
+.remeber_forget {
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 300px;
+    height: 20px;
+    
+}
+
+#rember {
+    position: relative;
+    width: 150px;
+    height: 20px;
+    float:left;
+    font-size: 14px;
+    font-family: Arial;
+    color: #FFFFFF; 
+}
+
+.icon_rember {
+    background-image: url("images/BTN_RemeberMe_Unselect_12X12.png.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: 0px 0px;
+    width: 12px;
+    height: 12px;
+    z-index: 5;
+    top: 2px;
+    cursor: pointer;
+}
+
+.rember_text {
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+#forget {
+    width: 150px;
+    height: 20px;
+    float:right;
+    font-size: 14px;
+    font-family: Arial;
+    color: #FFFFFF; 
+}
+
+.forget_text {
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+#footer {
+    border-top: 1px solid #2E4358;
+    width: 1279px;
+    height: 110px;
+    text-align: center;
+}
+
+.footer_text {
+    font-size: 12px;
+    color: #2E4358;
+    font-family: Arial;
+}

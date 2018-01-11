@@ -1,0 +1,366 @@
+@CHARSET "UTF-8";
+
+body {
+    border: 1px solid #9D9D9D;
+    width: 1240px;
+    height: 560px;
+    margin: 0px auto;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+#questionManagement {
+   border: 1px solid #9D9D9D;
+    width: 1240px;
+    height: 560px;
+    margin: 0px auto;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+#questionManagementHeader {
+    width: 1240px;
+    height: 50px;
+    position: relative;
+}
+
+.questionManagementInput {
+    WIDTH: 200px;
+    height: 50px;
+    border-right: 1px solid #2E4358;
+}
+
+.questionManagementInput input {
+    width: 160px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #296793;
+    margin-top: 10px;
+    margin-left: 1000px;
+    padding-right: 40px;
+    padding-left: 10PX;
+    font-size: 14px;
+    font-family: Arial;
+    color: #5E5E5E;
+}
+
+#iconSearch {
+    background-image: url("images/ICN_Search_15x20.png.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 1190px;
+    bottom: 10px;
+    cursor: pointer;
+}
+#questionManagementContent {
+    width: 1240px;
+    height: 500px;
+}
+
+/* start question management left style */
+#questionManagementLeft {
+    width: 200px;
+    height: 511px;
+    position: relative;
+    float: left;
+    border-right: 1px solid #2E4358;
+}
+
+#questionManagementLeft ul {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+#questionManagementLeft ul li {
+    
+    width: 180px;
+    height: 30px;
+    border-bottom: 1px solid #2E4358;
+    list-style: none;
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial;
+    cursor: pointer;
+    line-height: 30px;
+}
+
+#questionManagementLeft ul .listOne {
+    background-color: #2E4358;
+    color: #FFFFFF;
+}
+
+#questionManagementLeft ul .listTwo {
+    background-color: #FFFFFF;
+    color: #2E4358;
+}
+/* start question management right style */
+#questionManagementRight {
+    border: 1px solid #2E4358;
+    width: 980px;
+    height: 400px;
+    float: left;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+#listTable {
+    width: 980px;
+    height: 340px;
+}
+
+.question_table {
+    margin: 0px;
+    padding: 0px;
+    width: 980px;
+    border-collapse: collapse;
+}
+
+.question_table img {
+    cursor: pointer;
+}
+
+.question_list_title {
+    width: 980px;
+    height: 40px;
+    border-bottom: 1px solid #2E4358;
+    font-family: Arial;
+    font-size: 14px;
+    color: #0A0A0A;
+    text-align: center;
+    font-weight: bold;
+}
+
+.question_list {
+    width: 980px;
+    height: 30px;
+    border-bottom: 1px solid #9D9D9D;
+    text-align: center;
+}
+.question_list_one {
+    padding-left: 70px;
+    padding-right: 40px;
+    font-family: Arial;
+    font-size: 12px;
+    color: #0A0A0A;
+}
+
+.question_list_one {
+    font-family: Arial;
+    font-size: 12px;
+    color: #0A0A0A;
+}
+
+.question_list_title  .question_list_three img{
+    display:block;
+    margin-top: 5px;
+}
+
+.question_list .question_list_three{
+    padding-left: 90px;
+    padding-right: 90px;
+    font-family: Arial;
+    font-size: 12px;
+    color: #296793;
+    text-decoration: none;
+    cursor: pointer;
+}
+.question_list_five {
+    padding-left: 40px;
+    padding-right: 70px;
+}
+
+/* start question list page style */
+#questionListPage{
+    margin: 0px;
+    padding: 0px;
+    width: 980px;
+    height: 60px;
+}
+
+#questionListPage #pageSign {
+    width: 380px;
+    height: 20px;
+    float: left;
+    margin-left: 340px;
+    margin-top: 30px;
+}
+
+#questionListPage #pageSign #pageLeft {
+    float: left;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+}
+
+#questionListPage #pageSign #one a{
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #F19901;
+}
+
+#questionListPage #pageSign #two {
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#questionListPage #pageSign #three {
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#questionListPage #pageSign #omit {
+    float: left;
+    margin-left: 10px;
+    height: 2px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+#questionListPage #pageSign #lastPage {
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#questionListPage #pageSign #pageRight {
+    float: left;
+    margin-left: 10px;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+}
+
+#questionListPage #pageSign #selector {
+    float: left;
+    margin-left: 10px;
+    
+    cursor: pointer;
+    
+}
+
+#pageSign #selector #questionListPageSelect {
+    color: #F19901;
+    height: 17px;
+    width: 37px;
+}
+
+
+#questionListPage #pageSign #perPage {
+    float: left;
+    margin-left: 25px;
+    font-size: 12px;
+    color: #5E5E5E;
+    font-family: Arial;
+}
+
+#questionListPage #pageSign #text{
+    float: left;
+    width: 20px;
+    height: 15px;
+    margin-left: 10px;
+    border: 1px solid #5E5E5E;
+    border-redius: 5px;
+}
+
+#questionListPage #pageSign #go{
+    float: left;
+    margin-left: 10px;
+    width: 30px;
+    height: 15px;
+    border: 0px;
+    background-color: #F19901;
+    text-align: center;
+    line-height: 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+    
+}
+
+#questionListPage #del{
+    float: right;
+    cursor: pointer;
+    background-color: #F19901;
+    width: 60px;
+    height: 25px;
+    margin-top: 20px;
+    margin-right: 70px;
+    border: 0px;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+#popupWindow {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+}
+
+#popupWindow #popContent {
+    width: 400px;
+    height: 200px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+    border-radius: 5px;
+    border: 1px solid #2E4358;
+}
+
+#popupWindow #popContent img {
+    display: block;
+    margin-left: 369px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#popupWindow #popContent span {
+    width: 398px;
+    height: 10px;
+    display: block;
+    font-family: Arial;
+    font-size: 14px;
+    color: #0A0A0A;
+    margin-top: 39px;
+    text-align: center;
+}
+
+#popupWindow #popContent #popInput {
+    width: 398px;
+    height: 30px;
+    margin-top: 50px;
+}
+
+#popupWindow #popContent #popInput input {
+    width: 80px;
+    height: 30px;
+    background-color: #F19901;
+    color: #FFFFFF;
+    border: 0px;
+    border-radius: 5px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+#popupWindow #popContent #popInput #yes {
+    margin-left: 105px;
+}
+
+#popupWindow #popContent #popInput #no {
+    margin-left: 30px;
+}

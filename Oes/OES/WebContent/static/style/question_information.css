@@ -1,0 +1,139 @@
+@CHARSET "UTF-8";
+
+@CHARSET "UTF-8";
+
+body {
+    margin: 0px auto;
+    width: 1240px;
+    height: 500px;
+}
+#QuestionInformation {
+    margin:0px;
+    padding:0px;
+    width: 640px;
+    height: 500px;
+    margin: 0px auto;
+    font-family: Arial;
+}
+
+#QuestionInformation .create_family {
+    font-size: 14px;
+    color: #0A0A0A;
+    text-align: left;
+    width: 100px;
+    height: 15px;
+    float: left;
+    
+}
+
+#QuestionInformation #questionID {
+    width: 640px;
+    height: 30px;
+    margin-top: 30px;
+}
+
+#QuestionInformation #questionID #qid {
+    margin-top: 7px;
+}
+
+#QuestionInformation #questionID #qText #questionIdText{
+    padding: 0px;
+    border: 0px;
+    width: 150px;
+    height: 28px;
+    margin-left: 40px;
+    float: left;
+    border-radius: 3px;
+    text-align: center;
+}
+#QuestionInformation #question {
+    width: 640px;
+    height: 100px;
+    margin-top: 30px;
+}
+
+#QuestionInformation #question  #questionContent {
+    width: 480px;
+    height: 100px;
+    margin-left: 45px;
+    float: left;
+}
+
+#QuestionInformation #question  #questionContent  #questionTitle {
+    width: 480px;
+    height: 100px;
+    display: block;
+    border-radius: 3px;
+    margin-top: -1px;
+    float: left;
+}
+#QuestionInformation #answer {
+    width: 640px;
+    height: 125px;
+    margin-top: 20px;
+}
+
+#QuestionInformation #answer  #answerContent {
+    width: 496px;
+    height: 135px;
+    float: left;
+    margin-left: 40px;
+}
+
+
+#QuestionInformation #answer  #answerContent .answerCon {
+    width: 498px;
+    height: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#QuestionInformation #answer  #answerContent #a {
+    margin-top: 0px;
+}
+
+
+#QuestionInformation #answer  #answerContent .answerCon span {
+    font-family: Arial;
+    font-size: 14px;
+    color: #2E4358;
+    display: block;
+    float: left;
+    margin-top: 5px;
+}
+
+#QuestionInformation #answer  #answerContent .answerCon .answer_text {
+	display: block;
+	float: left;
+    width: 435px;
+    height: 20px;
+    border-radius: 3px;
+    margin-left: 10px;
+    
+}
+
+#QuestionInformation #button {
+    width: 640px;
+    height: 30px;
+    margin-top: 50px;
+}
+
+#QuestionInformation #button .buttonConClass {
+    width: 150px;
+    height: 30px;
+    border: 0px;
+    border-radius: 3px;
+    background-color: #F19901;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: Arial;
+}
+#QuestionInformation #button #edit {
+    margin-left: 160px;
+    cursor: pointer;
+}
+
+#QuestionInformation #button #delete {
+    margin-left: 30px;
+    cursor: pointer;
+}
